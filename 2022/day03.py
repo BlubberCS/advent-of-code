@@ -1,4 +1,3 @@
-
 input = list(map(lambda x: x.strip(), open("input_files/day03.txt", "r").readlines()))
 
 def sum_priorities(l):
@@ -19,5 +18,5 @@ badges=[]
 for rucksack1,rucksack2,rucksack3 in input_tuples:
     badges.append([l for l in rucksack1 if l in rucksack2 and l in rucksack3][0])
 
-print("sum of the priorities:", sum_priorities(items))
-print("sum of the priorities (three-Elf group):", sum_priorities(badges))
+print("sum of the priorities of those item types:", sum_priorities(items))
+print("sum of the priorities of those item types (three-Elf group):", sum_priorities(badges))
